@@ -2,7 +2,7 @@
 
 To run the API you have to have .Net 6 installed in your machine and VS 2022
 I have built it using python Fast API as well from here: 
-      [Current progress: Finished CRUD operations](https://github.com/rhourani/FastAPI/blob/Tic-tac-toe-)
+      [Current progress: Finished CRUD operations](https://github.com/rhourani/FastAPI/tree/Tic-tac-toe-)
 
 Use https://editor.swagger.io/ to see the swagger.yaml api file
 
