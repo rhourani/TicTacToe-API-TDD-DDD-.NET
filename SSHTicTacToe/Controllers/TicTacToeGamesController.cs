@@ -8,14 +8,11 @@ namespace SSHTicTacToe.Controllers
     [Route("api/v1/games")]
     public class TicTacToeGamesController : ControllerBase
     {
-        private readonly ILogger<TicTacToeGamesController> _logger;
         private readonly ITicTacToeGameService _ticTacToeGameService;
 
         public TicTacToeGamesController(
-            ILogger<TicTacToeGamesController> logger, 
             ITicTacToeGameService ticTacToeGameService)
         {
-            _logger = logger;
             _ticTacToeGameService = ticTacToeGameService;
         }
 

@@ -3,8 +3,11 @@ using SSHTicTacToe.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+ConfigurationServices(builder.Services);
+
+
 // Add services to the container.
-builder.Services.AddScoped<ITicTacToeGameService, TicTacToeGameService>();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -29,3 +32,8 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+void ConfigurationServices(IServiceCollection services)
+{
+    builder.Services.AddScoped<ITicTacToeGameService, TicTacToeGameService>();
+}

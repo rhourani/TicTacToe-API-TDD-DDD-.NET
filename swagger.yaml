@@ -1,0 +1,96 @@
+openapi: 3.0.1
+info:
+  title: SSHTicTacToe
+  version: '1.0'
+paths:
+  /api/v1/games:
+    get:
+      tags:
+        - TicTacToeGames
+      responses:
+        '200':
+          description: Success
+    post:
+      tags:
+        - TicTacToeGames
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TicTacToeGameCreationDTO'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/TicTacToeGameCreationDTO'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/TicTacToeGameCreationDTO'
+      responses:
+        '200':
+          description: Success
+  /api/v1/games/{game_id}:
+    get:
+      tags:
+        - TicTacToeGames
+      parameters:
+        - name: game_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Success
+    put:
+      tags:
+        - TicTacToeGames
+      parameters:
+        - name: game_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateGameDTO'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/UpdateGameDTO'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/UpdateGameDTO'
+      responses:
+        '200':
+          description: Success
+    delete:
+      tags:
+        - TicTacToeGames
+      parameters:
+        - name: game_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Success
+components:
+  schemas:
+    TicTacToeGameCreationDTO:
+      type: object
+      properties:
+        board:
+          type: string
+          nullable: true
+      additionalProperties: false
+    UpdateGameDTO:
+      type: object
+      properties:
+        board:
+          type: string
+          nullable: true
+      additionalProperties: false
