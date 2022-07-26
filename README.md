@@ -13,8 +13,8 @@ Screenshot
 
 
 # Used Techs:
-.Net
-SOLID
-TDD
-Domain Driven Design Pattern / Clean architecture
-Test Driven Desgin
+* .Net
+* SOLID
+* TDD
+* Domain Driven Design Pattern / Clean architecture
+*Test Driven Desgin
