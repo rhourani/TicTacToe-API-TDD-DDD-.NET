@@ -17,4 +17,4 @@ Screenshot
 * SOLID
 * TDD
 * Domain Driven Design Pattern / Clean architecture
-*Test Driven Desgin
+* Test Driven Desgin
