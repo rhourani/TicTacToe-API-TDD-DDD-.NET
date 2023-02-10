@@ -29,13 +29,13 @@ Screenshot
 
 <img src="AuthorizedKeys API result.png" align="center">
 
-#SQL query to search keys contains specific option 
+# SQL query to search keys contains specific option 
 SELECT * FROM [SSH].[dbo].[AuthorizedKeys] where Options like '%no-port-forwarding%'
 
 <img src="SQL query.png" align="center">
 
 
-#Futher improvemnts
+# Futher improvemnts
 Depending on the usage and requirments of the application the authrized keys can be used mainly as a hub for authentication.
 The db fields can be extended to meet these expectations and requirments.
 
