@@ -27,6 +27,9 @@ namespace SSHTicTacToe.ErrorMiddleware
                         // not found error
                         response.StatusCode = (int)HttpStatusCode.NotFound;
                         break;
+                    case FileNotFoundException e:
+                        response.StatusCode = (int)HttpStatusCode.NotFound;
+                        break;
                     default:
                         // unhandled error
                         response.StatusCode = (int)HttpStatusCode.InternalServerError;

@@ -1,5 +1,6 @@
 using SSHTicTacToe.ErrorMiddleware;
 using SSHTicTacToe.Services;
+using SSHTicTacToe.Services.AuthorizedKeysParserServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,4 +37,5 @@ app.Run();
 void ConfigurationServices(IServiceCollection services)
 {
     builder.Services.AddScoped<ITicTacToeGameService, TicTacToeGameService>();
+    builder.Services.AddScoped<IAuthorizedKeysParserService, AuthorizedKeysParserService>();
 }
