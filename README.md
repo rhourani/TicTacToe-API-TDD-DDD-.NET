@@ -28,3 +28,16 @@ Screenshot
 * EF 6
 
 <img src="AuthorizedKeys API result.png" align="center">
+
+#SQL query to search keys contains specific option 
+SELECT * FROM [SSH].[dbo].[AuthorizedKeys] where Options like '%no-port-forwarding%'
+
+<img src="SQL query.png" align="center">
+
+
+#Futher improvemnts
+Depending on the usage and requirments of the application the authrized keys can be used mainly as a hub for authentication.
+The db fields can be extended to meet these expectations and requirments.
+
+On the technical side of the whole app many improvemnts can be done. Adding user authentication and policy based authorizations, integrate the solution with cloud technolgy. Enhance the security of the API (needs me to read more about it). The internal structure of the endpoints seems a bit unorganized. Error handling and more SOLID principles can be followed.
+Convert the DB connection to dependency injection is recommended.
