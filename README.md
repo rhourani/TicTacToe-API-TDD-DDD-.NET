@@ -26,3 +26,5 @@ Screenshot
 
 # Added new tech stack
 * EF 6
+
+<img src="AuthorizedKeys API result.png" align="center">
