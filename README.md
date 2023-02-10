@@ -18,3 +18,11 @@ Screenshot
 * TDD
 * Domain Driven Design Pattern / Clean architecture
 * Test Driven Desgin
+
+#NEW
+# Parsing authorize_keys file endpoints
+* Read file,
+* List keys
+
+# Added new tech stack
+* EF 6
