@@ -15,9 +15,8 @@ Screenshot
 # Used Techs:
 * .Net
 * SOLID
-* TDD
 * Domain Driven Design Pattern / Clean architecture
-* Test Driven Desgin
+* Test Driven Design
 
 ## NEW
 # Parsing authorize_keys file endpoints
@@ -35,9 +34,9 @@ SELECT * FROM [SSH].[dbo].[AuthorizedKeys] where Options like '%no-port-forwardi
 <img src="SQL query.png" align="center">
 
 
-# Futher improvemnts
-Depending on the usage and requirments of the application the authrized keys can be used mainly as a hub for authentication.
-The db fields can be extended to meet these expectations and requirments.
+# Further improvements
+Depending on the usage and requirements of the application the authorized keys can be used mainly as a hub for authentication.
+The db fields can be extended to meet these expectations and requirements.
 
-On the technical side of the whole app many improvemnts can be done. Adding user authentication and policy based authorizations, integrate the solution with cloud technolgy. Enhance the security of the API (needs me to read more about it). The internal structure of the endpoints seems a bit unorganized. Error handling and more SOLID principles can be followed.
+On the technical side of the whole app many improvements can be done. Adding user authentication and policy based authorizations, integrate the solution with cloud technology. Enhance the security of the API (needs me to read more about it). The internal structure of the endpoints seems a bit unorganized. Error handling and more SOLID principles can be followed.
 Convert the DB connection to dependency injection is recommended.
