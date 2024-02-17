@@ -1,0 +1,14 @@
+﻿C:\Users\Admin\Source\Repos\rhourani\TicTacToe-API-TDD-DDD-.NET\TicTacToe.TEST\Fixture\AuthorizedKeysFixture.cs
+C:\Users\Admin\Source\Repos\rhourani\TicTacToe-API-TDD-DDD-.NET\TicTacToe.TEST\Fixture\GamesFixture.cs
+C:\Users\Admin\Source\Repos\rhourani\TicTacToe-API-TDD-DDD-.NET\TicTacToe.TEST\Helpers\MockHttpMessageHandler.cs
+C:\Users\Admin\Source\Repos\rhourani\TicTacToe-API-TDD-DDD-.NET\TicTacToe.TEST\System\Controllers\TestAuthorizedKeysParserController.cs
+C:\Users\Admin\Source\Repos\rhourani\TicTacToe-API-TDD-DDD-.NET\TicTacToe.TEST\System\Controllers\TestTicTacToeGamesController.cs
+C:\Users\Admin\Source\Repos\rhourani\TicTacToe-API-TDD-DDD-.NET\TicTacToe.TEST\System\Services\TestAuthorizedKeysParserService.cs
+C:\Users\Admin\Source\Repos\rhourani\TicTacToe-API-TDD-DDD-.NET\TicTacToe.TEST\System\Services\TestTicTacToeGameService.cs
+C:\Users\Admin\.nuget\packages\microsoft.net.test.sdk\16.11.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\Admin\.nuget\packages\microsoft.testplatform.testhost\16.11.0\build\netcoreapp2.1\x64\testhost.exe
+C:\Users\Admin\.nuget\packages\microsoft.testplatform.testhost\16.11.0\build\netcoreapp2.1\x64\testhost.dll
+C:\Users\Admin\.nuget\packages\microsoft.testplatform.testhost\16.11.0\build\netcoreapp2.1\x64\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\Admin\.nuget\packages\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Admin\.nuget\packages\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Admin\.nuget\packages\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.utility.netcoreapp10.dll
