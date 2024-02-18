@@ -17,7 +17,7 @@ namespace SSHTicTacToe.Services
             
             var game = _games.Where(x => x.Id == uuid).FirstOrDefault();
 
-            if (game == null)//error hanlding
+            if (game == null)//error handling
             {
                 game = new TicTacToeGameDTO();
                 game.isError = true;
@@ -33,7 +33,7 @@ namespace SSHTicTacToe.Services
 
             char[] chBoard = newGame.Board.ToCharArray();
  
-            //Checking if user made a first move and checking which patern 'X' or 'O' chose
+            //Checking if user made a first move and checking which pattern 'X' or 'O' has been chosen
             for(int i = 0; i < chBoard.Length; i++)
             {
                 if(chBoard[i] != '-')
@@ -54,20 +54,20 @@ namespace SSHTicTacToe.Services
             }
 
             //Assigning PC move randomly in an empty position
-            int locationIndx;
+            int locationIndex;
             if (userHasAMove == false)
             {
-                locationIndx = new Random().Next(0, 9);
+                locationIndex = new Random().Next(0, 9);
             }
             else
             {
                 do
                 {
-                    locationIndx = new Random().Next(0, 9);
-                } while (locationIndx == userMoveIndex);
+                    locationIndex = new Random().Next(0, 9);
+                } while (locationIndex == userMoveIndex);
             }
 
-            chBoard[locationIndx] = userIsCrosses == true ? 'O' : 'X';
+            chBoard[locationIndex] = userIsCrosses == true ? 'O' : 'X';
 
             //saving in cache
             var game = new TicTacToeGameDTO
